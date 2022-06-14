@@ -51,7 +51,7 @@ section {
 	font-weight: 600;
 	font-size: 15px;
 	line-height: 150%;
-	background: #2be061;
+	background: #EE6D95;
 	box-shadow: 0px 20px 30px rgba(150, 6, 52, 0.2);
 	border-radius: 30px;
 	padding: 16px 0;
@@ -75,7 +75,7 @@ section {
 /* Первый экран  */
 
 .header {
-	background: linear-gradient(90deg, #198a5b 0%, #1ad863 100%);
+	background: linear-gradient(90deg, #EE6D95 0%, #EBDFB4 100%);
 	overflow: hidden;
 }
 
@@ -100,11 +100,17 @@ section {
 }
 
 .head li a:hover {
-	color: #2ad162;
+	color: #6e3281;
 }
 
 .head__menu {
 	position: relative;
+}
+
+.head__logo {
+	max-width: 160px;
+	right: 85px;
+	bottom: 163px;
 }
 
 .head__item:not(:last-child) {
@@ -163,25 +169,16 @@ section {
 	color: #6e3281;
 	border-color: #6e3281;
 }
-.logo {
-	width: 120px;
-	border-radius: 5px;
-}
+
 .images {
 	position: relative;
 }
-.images__center{
-	width: 300px;
-	height: 500px;
-}
-
 .images__center, .images__bg, .main-img-sm{
 	display: block;
+	width: 100%;
 }
-.images__bg, 
-.images__chat-one ,
-.images__chat-two {
-	 position: absolute; 
+.images__bg, .images__chat-one, .images__chat-two, .images__pic {
+	position: absolute;
 }
 
 .images__bg {
@@ -189,11 +186,7 @@ section {
 	left: 0;
 }
 
-.images__chat-one , .images__chat-two {
-	 position:inherit;
-	display:flex;
-	justify-content: flex-end;
-	align-items: flex-start;
+.images__chat-one {
 	right: 85px;
 	bottom: 163px;
 }
@@ -340,14 +333,6 @@ section {
 	text-align: left;
 }
 
-.slider__list swiper-wrapper {
-	display: flex;
-}
-
-.swiper-wrapper {
-	display: flex;
-}
-}
 .slider {
 	width: 100%;
 	height: 500px;
@@ -582,9 +567,6 @@ form .error {
 	}
 }
 
-.footer_logo {
-	width: 150px;
-}
 @media screen and (max-width: 767px) {
 	.person:not(:last-child) {
 		margin-right: 0;
